@@ -8,8 +8,8 @@ __note__: Je tiens à préciser qu'on va ici faire du python3. Sachez qu'il y a 
 Bon après cette brève introduction, je vais ici vous faire suivre un grand résumé de ce qu'on fait en première année INSA:
 
 * Procédures / Fonctions
-* Les blocs (if, else, for, while)
 * Les types
+* Les blocs (if, else, for, while)
 * Algorithme de recherche de min, recherche de max
 * Algorithme de tri
 * Traitement de texte (Input / Output)

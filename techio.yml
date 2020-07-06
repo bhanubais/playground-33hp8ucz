@@ -1,10 +1,12 @@
-title: Python Project
+title: Waffle
 plan:
 - title: Welcome
   statement: markdowns/welcome.md
   plan:
     - title: "Procédures / Fonctions"
       statement: markdowns/procedure_fonction.md
+    - title: "Les types"
+      statement: markdowns/types.md
 projects:
   python:
     root: /project
