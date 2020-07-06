@@ -36,8 +36,45 @@ Par exemple :
 def add(a, b):
   c = a + b
   return c
-print(c)
+a = 5
 ```
 
-Le `print(c)` n'est pas dans la fonction add. Cette dernière (la fonction), calcule la somme de a et b, et la stocke dans une variable c. Ensuite, il renvoie la valeur de c grâce au return.
+La ligne `a = 5` n'est pas dans la fonction add. Cette dernière (la fonction), calcule la somme de a et b, et la stocke dans une variable c. Ensuite, il renvoie la valeur de c grâce au return.
 
+## Appel de fonction
+
+Maintenat qu'on a écrit des fonctions, il faut pouvoir les utiliser. On peut appeler les fonctions en utilisant son identifiant, et des parenthèses. 
+
+```python
+input()
+```
+
+En cours, vous avez utilisé la fonction `input` pour attendre une entrée utilisateur, et du coup mettre en pause votre programme.
+
+Dans les parenthèses, on mets les arguments. Il y a plusieurs façons:
+
+* Soit dans l'ordre `add(5, 2)`
+* Soit en précisant les variables `add(a=5, b=2)` ou `add(b=2, a=5)`
+
+On peut tout à fait écrire des variables à la place des nombres : 
+
+```python
+a = 5
+b = 8
+add(a, b)  # ou add(b, a)
+
+La valeur renvoyée est stockée directement après l'appel de fonction, ainsi on peut les imbriquer :
+
+```python
+
+add(5, add(2, 3))  # 5 + (2 + 3)
+```
+
+On peut même reccupérer le résultat à travers l'affectation classique :
+
+```
+a = 5
+resultat = add(a, 5)
+```
+
+La variable résultat contient donc `10`.
