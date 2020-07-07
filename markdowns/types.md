@@ -31,7 +31,7 @@ On peut retrouver des informations à travers des structures de donnée. En pyth
 
 Notez bien qu'il ne s'agit pas de type, mais de structure de donnée. Du coup, vous pouvez les imbriquer autant que vous voulez. Une liste peut contenir un tuple qui lui même contient une liste.
 
-## Les tuples
+## Les tuples
 
 Un tuple est une structure de donnée particulière. Voyez la comme un ensemble. En fait, on peut coller des éléments les un avec les autres.
 
@@ -66,4 +66,31 @@ liste = [] # liste vide
 liste = [1, 2, 3] # liste contenant 1, 2 et 3
 ```
 
+Les listes n'ont pas de taille limite, on peut rajouter autant d'élément que l'on veut.
+
+Pour rajouter un élément à la fin de la liste il y a la fonction `append`. Elle est différente des fonctions que vous avez utilisé jusque là, elle s'utilise directement sur la liste. Nous verrons plus tard pourquoi.
+
+```
+liste = []
+liste.append(55)
+```
+
 Je vous conseil énormément de lire la section Types séquentiels sur la documentation officiel [https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range](https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range).
+
+## Dictionnaire
+
+Les dictionnaires sont une structure de donnée par clef/valeur. Contrairement à une liste où on utilise les indices, on utilise des clefs pour accéder aux éléments. On peut donc mieux les organiser.
+
+Les clefs peuvent être tout ce que vous voulez. Une chaîne de caractère, un entier, peu importe. La taille du dictionnaire est "illimitée". Après l'avoir créé, vous pouvez rajouter des éléments.
+
+On crée un dictionnaire comme ceci:
+```
+dictionnaire = {}
+dictionnaire = {"prenom": "River", "nom": "Song"}
+dictionnaire["age"] = 18
+```
+
+Ici, on a crée un dictionnaire vide sur la première ligne. À la deuxième, on crée un dictionnaire avec 2 clefs ("prénom", et "nom"). Puis à la troisième ligne, on a ajouté une nouvelle entrée, dont la clef est "age", et la valeur 18.
+
+
+__important__ : Il existe des fonctions sur les listes et les dictionnaires (ajout / suppression .etc). Nous verrons tout ça ensemble plus tard.

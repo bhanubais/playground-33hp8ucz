@@ -62,11 +62,10 @@ On peut tout à fait écrire des variables à la place des nombres :
 a = 5
 b = 8
 add(a, b)  # ou add(b, a)
-
+```
 La valeur renvoyée est stockée directement après l'appel de fonction, ainsi on peut les imbriquer :
 
 ```python
-
 add(5, add(2, 3))  # 5 + (2 + 3)
 ```
 
