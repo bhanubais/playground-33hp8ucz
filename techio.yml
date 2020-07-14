@@ -6,7 +6,7 @@ plan:
     statement: markdowns/procedure_fonction.md
   - title: Types
     statement: markdowns/types.md
-  - title: Les blocs
+  - title: The blocks
     statement: markdowns/blocs.md
   statement: markdowns/welcome.md
 projects:
