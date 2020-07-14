@@ -1,96 +1,97 @@
-# Les types
+# Types
 
-Il y a plusieurs façon de classifier les langages, ici on va parler du typage.
-Une variable est un identifiant qui va stocker une valeur. On l'a vu précédemment, mais en python peu importe le nom de ta variable, tu peux lui attribuer ce que tu veux.
-Python est ce qu'on appel un langage avec un typage dynamique fort. En fait, quand vous créez une variable, vous n'avez pas à préciser le type.
+There are several ways to classify languages, here we will talk about typing.
+A variable is an identifier that will store a value. We saw it before, but in python whatever the name of your variable, you can assign it what you want.
+Python is what we call a language with strong dynamic typing. In fact, when you create a variable, you don't have to specify the type.
 
-Exemple :
+Example:
 
 ```python
-	a = 5
-	a = "BLABLA"
+a = 5
+a = "BLABLA"
 ```
 
-Il va lui même déterminer le type au moment où vous lui attribuer une valeur.
+It will itself determine the type when you assign it a value.
 
-En python, il y a plusieurs types:
+In python, there are several types:
 
-* Les String (chaines de caractères). La variable `a` au dessus est du coup du type str (on appelle ça `String`).
-* Les booleéns. C'est en fait un type pour définir le vrai et le faux. Vrai est représenté par `True` et faux par `False`. Retenez bien la majuscule, c'est parfois fourbe.
-* Les int (entiers). Les nombre relatifs sont représentés dans ce type. Les nombres `3` et `-5` seront des int :)
-* Nous verrons plus tard la suite :)
+* String (character strings). The variable `a` above is suddenly of type str (this is called `String`).
+* The booleans. It is actually a type to define the true and the false. True is represented by `True` and false by `False`. Remember the capital, it is sometimes deceitful.
+* The int (integers). Relative numbers are represented in this type. The numbers `3` and `-5` will be int :)
+* We will see later on :)
 
-__attention__ : Si tu mélanges des types à travers des `+` ou `-`, python ne te laissera pas faire, donc faut être sur de ce que contient tes variables :)
+__attention__: If you mix types through `+` or `-`, python won't let you, so be sure what your variables contain :)
 
 
-# Structure de données
+# Data structure
 
-Maintenant que nous avons vu les types, on peut parler de structures plus complexes. C'est bien marrant de jouer avec des variables, mais souvent on utilise pas cela.
+Now that we have seen the types, we can speak of more complex structures. It's fun to play with variables, but often we don't use that.
 
-On peut retrouver des informations à travers des structures de donnée. En python, il y en a trois : les tuples, les listes et les dictionnaires.
+We can find information through data structures. In python, there are three: tuples, lists and dictionaries.
 
-Notez bien qu'il ne s'agit pas de type, mais de structure de donnée. Du coup, vous pouvez les imbriquer autant que vous voulez. Une liste peut contenir un tuple qui lui même contient une liste.
+Note that this is not a type, but a data structure. So you can nest them as much as you want. A list can contain a tuple which itself contains a list.
 
-## Les tuples
+## Tuples
 
-Un tuple est une structure de donnée particulière. Voyez la comme un ensemble. En fait, on peut coller des éléments les un avec les autres.
+A tuple is a particular data structure. See it as a whole. In fact, you can stick elements together.
 
 ```python
 t = (0, "a")
 ```
 
-Ici la variable t est un ensemble, le premier élément est un entier (0) et le deuxième est la lettre `a`.
+Here the variable t is a set, the first element is an integer (0) and the second is the letter `a`.
 
-On peut accéder aux éléments internes à travers la notation `t[indice]`.
-L'indice est l'indice de l'élément dans le tuple.
+Internal elements can be accessed through the notation `t [index]`.
+The index is the index of the element in the tuple.
 
-__attention__: En 99.99% des langages, on commence à compter à 0 :)
+__attention__: In 99.99% of languages, we start counting at 0 :)
 
-Du coup, pour accéder au premier élément du tuple t:
+So, to access the first element of the tuple t:
 
 ```
-t[0] => 0
-t[1] => "a"
+t [0] => 0
+t [1] => "a"
 ```
 
-## Les listes
+## The lists
 
-Les listes , ou tableaux, dépendant de comment vous aimez l'appeler, sont une structure capital en python.
+Lists, or tables, depending on how you like to call it, are a capital structure in python.
 
-On peut avoir une liste de liste d'entiers, ou une liste de tout et n'importe quoi. On peut avoir plusieurs types dans la même liste.
+You can have a list of integer lists, or a list of anything and everything. We can have several types in the same list.
 
-On crée une liste des crochets :
+We create a list of square brackets:
 
 ```python
-liste = [] # liste vide
-liste = [1, 2, 3] # liste contenant 1, 2 et 3
+list = [] # empty list
+list = [1, 2, 3] # list containing 1, 2 and 3
 ```
 
-Les listes n'ont pas de taille limite, on peut rajouter autant d'élément que l'on veut.
+The lists have no size limit, you can add as many elements as you want.
 
-Pour rajouter un élément à la fin de la liste il y a la fonction `append`. Elle est différente des fonctions que vous avez utilisé jusque là, elle s'utilise directement sur la liste. Nous verrons plus tard pourquoi.
+To add an element at the end of the list there is the `append` function. It is different from the functions you have used so far, it is used directly on the list. We will see later why.
 
 ```
-liste = []
-liste.append(55)
+list = []
+list.append (55)
 ```
 
-Je vous conseil énormément de lire la section Types séquentiels sur la documentation officiel [https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range](https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range).
+I strongly advise you to read the Sequential types section on the official documentation [https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range](https://docs.python.org/fr/3/library/stdtypes.html#sequence-types-list-tuple-range).
 
-## Dictionnaire
+## Dictionary
 
-Les dictionnaires sont une structure de donnée par clef/valeur. Contrairement à une liste où on utilise les indices, on utilise des clefs pour accéder aux éléments. On peut donc mieux les organiser.
+Dictionaries are a data structure by key / value. Unlike a list where we use indices, we use keys to access the elements. We can therefore organize them better.
 
-Les clefs peuvent être tout ce que vous voulez. Une chaîne de caractère, un entier, peu importe. La taille du dictionnaire est "illimitée". Après l'avoir créé, vous pouvez rajouter des éléments.
+Keys can be anything you want. A character string, an integer, whatever. The dictionary size is "unlimited". After creating it, you can add elements.
 
-On crée un dictionnaire comme ceci:
+We create a dictionary like this:
+
+```python
+dictionary = {}
+dictionary = {"first name": "River", "name": "Song"}
+dictionary ["age"] = 18
 ```
-dictionnaire = {}
-dictionnaire = {"prenom": "River", "nom": "Song"}
-dictionnaire["age"] = 18
-```
 
-Ici, on a crée un dictionnaire vide sur la première ligne. À la deuxième, on crée un dictionnaire avec 2 clefs ("prénom", et "nom"). Puis à la troisième ligne, on a ajouté une nouvelle entrée, dont la clef est "age", et la valeur 18.
+Here, we created an empty dictionary on the first line. In the second, we create a dictionary with 2 keys ("first name", and "last name"). Then in the third line, we added a new entry, whose key is "age", and the value 18.
 
 
-__important__ : Il existe des fonctions sur les listes et les dictionnaires (ajout / suppression .etc). Nous verrons tout ça ensemble plus tard.
+__important__: There are functions on lists and dictionaries (add / remove .etc). We'll see it all together later.
