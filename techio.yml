@@ -4,7 +4,7 @@ plan:
   plan:
   - title: Procedures / Functions
     statement: markdowns/procedure_fonction.md
-  - title: Les types
+  - title: Types
     statement: markdowns/types.md
   - title: Les blocs
     statement: markdowns/blocs.md
