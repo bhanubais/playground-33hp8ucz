@@ -1,72 +1,72 @@
-# Les blocs
+# The blocks
 
-Un bloc est une suite d'actions. En python il est défini par le niveau de tabulation.
+A block is a series of actions. In python it is defined by the level of tabulation.
 
-## Les blocs conditionnels
+## Conditional blocks
 
-Souvent, il faut exécuter une action ou une autre selon la valeur d'une variable.
+Often, you have to perform one action or another depending on the value of a variable.
 
-En python, la structure des blocs conditionnels sont :
+In python, the structure of conditional blocks are:
 
 ```
 if [CONDITION]:
-	Instructions si condition vraie
-	...
+Instructions if true condition
+...
 
-ou 
+or
 
 if [CONDITION]:
-	Instructions si condition vraie
-	...
+Instructions if true condition
+...
 else:
-	Instructions si condition fausse
+Instructions if false condition
 ```
 
-__important__ : Notez bien l'utilisation du `:`, en python il est capital de le mettre à la fin de la première ligne du bloc :)
+__important__: Note the use of the `:`, in python it is essential to put it at the end of the first line of the block :)
 
-__note__: on va utilise la fonction print pour afficher dans le terminal :)
+__note__: we will use the print function to display in the terminal :)
 
-Petit exemple :
+Small example:
 ```python
 ta_note_en_maths = 9
-if ta_note_en_maths < 10:
-	print("Tu as raté")
+if ta_note_en_maths <10:
+print ("You missed")
 else:
-	print("Félicitations")
+print ("Congratulations")
 ```
 
-# Les boucles
+# Buckles
 
-Souvent, on se rend compte qu'on doit effectuer plusieurs fois une même action. Il serait dommage de ré-écrire plusieurs fois le même code, c'est pour cela qu'existent les boucles.
+Often, we realize that we must perform the same action several times. It would be a shame to rewrite the same code several times, that's why loops exist.
 
-Il y a deux types de boucles, cela dépend de si on sait quand ça s'arrête ou non.
+There are two types of loops, it depends on whether you know when it stops or not.
 
-## Boucle FOR
+## FOR loop
 
-La boucle for est important de comprendre et de maîtriser. Elle te permet de répéter une action n fois, ou de parcourir une liste en python.
+The for loop is important to understand and master. It allows you to repeat an action n times, or to browse a list in python.
 
-Vous l'avez utilisé dans vos cours pour répéter n fois une action, mais elle permet aussi de parcourir une liste d'élément :
+You used it in your lessons to repeat an action n times, but it also allows you to browse a list of elements:
 
 ```python
-liste = [1, 4, 5 , 6, 0]
-for element in liste:
-	print(element)
+list = [1, 4, 5, 6, 0]
+for element in list:
+print (element)
 ```
 
-Ci-dessus, la variable `element` va prendre à chaque tour de boucle la valeur dans la liste.
+Above, the variable `element` will take the value in the list at each loop.
 
 
-## Boucle while
+## while loop
 
-La boucle while, traduite en boucle tant-que en français :), est une boucle à utiliser lorsqu'on ne sait pas combien de fois on va faire notre traitement.
+The while loop, translated into a loop as much as in French :), is a loop to use when we don't know how many times we will do our processing.
 
-Par exemple, si on attends que l'utilisateur tape le mot : "StarLight".
+For example, if we wait for the user to type the word: "StarLight".
 
 ```python
-entree_utilisateur = "NotStartLight"  # J'initialise la variable
-while entree_utilisateur != "StarLight": # tant que l'entrée utilisateur n'est pas StarLight 
-	entree_utilisateur = input()  # on demande à l'utilisateur de taper quelque chose
-	print(entree_utilisateur)  # On affiche l'entrée utilisateur
+user_entry = "NotStartLight" # I initialize the variable
+while userinput! = "StarLight": # as long as the user input is not StarLight
+user_entry = input () # we ask the user to type something
+print (user_entry) # We display the user input
 ```
 
-Ce programme ci-dessus tourne tant que l'utilisateur n'a pas rentrer le mot demandé :).
+This above program runs until the user has entered the requested word :).
