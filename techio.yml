@@ -1,14 +1,14 @@
 title: Waffle
 plan:
 - title: Welcome
-  statement: markdowns/welcome.md
   plan:
-    - title: "Procédures / Fonctions"
-      statement: markdowns/procedure_fonction.md
-    - title: "Les types"
-      statement: markdowns/types.md
-    - title: "Les blocs"
-      statement: markdowns/blocs.md
+  - title: Procedures / Functions
+    statement: markdowns/procedure_fonction.md
+  - title: Les types
+    statement: markdowns/types.md
+  - title: Les blocs
+    statement: markdowns/blocs.md
+  statement: markdowns/welcome.md
 projects:
   python:
     root: /project
