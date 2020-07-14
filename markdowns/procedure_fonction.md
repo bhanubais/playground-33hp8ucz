@@ -1,79 +1,79 @@
-# Procédures et fonctions
+# Procedures and functions
 
-## Définitions
+## Definitions
 
-Une prodédure est une suite d'action qui ne renvoie rien.
-Une fonction est une procédure qui renvoie quelque chose.
+A procedure is a series of actions that return nothing.
+A function is a procedure that returns something.
 
-Je vais imaginer comme ceci :
+I will imagine like this:
 
-* Si je demande à quelqu'un de faire une addition, c'est une procédure, mais si je demande le résultat en plus, c'est une fonction.
+* If I ask someone to add, it's a procedure, but if I ask for the result, it's a function.
 
-Par exemple, une procédure classique c'est d'afficher quelque chose (`print`). Elle ne renvoie pas de résultat dans ton code, mais elle fait quelque chose. Tiens, une procédure c'est quand vous demander à votre turtle de faire quelque chose.
+For example, a classic procedure is to print something (`print`). It doesn't return a result in your code, but it does something. Well, a procedure is when you ask your turtle to do something.
 
-Par exemple, une fonction classique est justement l'exemple de l'addition. On demande à calculer a+b & on veut le résultat.
+For example, a classic function is precisely the example of addition. We ask to calculate a + b & we want the result.
 
 
-La raison pour laquelle on écrit des procédures et des fonctions c'est de pouvoir couper le code en petit morceaux. On peut du coup écrire une fonction qui fait un traitement pour ne pas avoir à répéter le code. Si je veux pouvoir faire calcul suivant : `f(x) = x*x + 55`, et que je veux calculer le résultat pour 10 valeurs différentes, c'est plus simple d'avoir une fonction :).
+The reason we write procedures and functions is to be able to cut the code into small pieces. We can suddenly write a function which does a processing so as not to have to repeat the code. If I want to be able to do the following calculation: `f (x) = x * x + 55`, and I want to calculate the result for 10 different values, it's easier to have a function :).
 
-En python, il n'y a pas de procédures (pas tapé). En fait, comme je l'ai dis plus haut, une procédure est une fonction qui ne renvoie **rien**. En python, le rien a une notation, c'est le type `None`.
+In python, there are no procedures (not typed). In fact, as I said above, a procedure is a function that returns ** nothing **. In python, nothing has a notation, it is type `None`.
 
-Comment on peut renvoyer quelque chose ? Le mot clef return est là pour ça. Si on ne le mets pas, python va automatiquement renvoyer `None`.
+How can we send something back? The keyword return is there for that. If you don't put it, python will automatically return `None`.
 
-Prenons l'exemple d'une addition: 
+Take the example of an addition:
 
 ```python
-def add(a, b):
+def add (a, b):
   c = a + b
   return c
 ```
 
-Ici on a défini une fonction, qui prends 2 arguments (a et b). Ensuite, tout ce qui est une tabulation ou plus après la ligne du mot-clef `def` est dans la fonction.
+Here we have defined a function, which takes 2 arguments (a and b). Then anything that is a tab or more after the line of the keyword `def` is in the function.
 
-Par exemple :
+For example :
 
 ```python
-def add(a, b):
+def add (a, b):
   c = a + b
   return c
 a = 5
 ```
 
-La ligne `a = 5` n'est pas dans la fonction add. Cette dernière (la fonction), calcule la somme de a et b, et la stocke dans une variable c. Ensuite, il renvoie la valeur de c grâce au return.
+The line `a = 5` is not in the add function. The latter (the function), calculates the sum of a and b, and stores it in a variable c. Then it returns the value of c with the return.
 
-## Appel de fonction
+## Function call
 
-Maintenat qu'on a écrit des fonctions, il faut pouvoir les utiliser. On peut appeler les fonctions en utilisant son identifiant, et des parenthèses. 
+Now that we have written functions, we must be able to use them. You can call functions using its identifier, and parentheses.
 
 ```python
-input()
+input ()
 ```
 
-En cours, vous avez utilisé la fonction `input` pour attendre une entrée utilisateur, et du coup mettre en pause votre programme.
+In progress, you used the `input` function to wait for user input, and suddenly pause your program.
 
-Dans les parenthèses, on mets les arguments. Il y a plusieurs façons:
+In the parentheses, we put the arguments. There are several ways:
 
-* Soit dans l'ordre `add(5, 2)`
-* Soit en précisant les variables `add(a=5, b=2)` ou `add(b=2, a=5)`
+* Or in the order `add (5, 2)`
+* Either by specifying the variables `add (a = 5, b = 2)` or `add (b = 2, a = 5)`
 
-On peut tout à fait écrire des variables à la place des nombres : 
+Variables can be written in place of numbers:
 
 ```python
 a = 5
 b = 8
-add(a, b)  # ou add(b, a)
+add (a, b) # or add (b, a)
 ```
-La valeur renvoyée est stockée directement après l'appel de fonction, ainsi on peut les imbriquer :
+The returned value is stored directly after the function call, so we can nest them:
 
 ```python
-add(5, add(2, 3))  # 5 + (2 + 3)
+add (5, add (2, 3)) # 5 + (2 + 3)
 ```
 
-On peut même reccupérer le résultat à travers l'affectation classique :
+We can even recover the result through the classic assignment:
 
-```
+```python
 a = 5
-resultat = add(a, 5)
+result = add (a, 5)
 ```
 
-La variable résultat contient donc `10`.
+The result variable therefore contains `10`.
